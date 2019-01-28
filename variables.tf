@@ -151,3 +151,9 @@ variable "enable_accelerated_networking" {
   description = "(Optional) Enable accelerated networking on Network interface"
   default     = "false"
 }
+
+variable "application_security_group_ids" {
+  type        = "list"
+  description = "A list of appication security groups that apply to VM Network interface"
+  default     = []
+}
